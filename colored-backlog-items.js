@@ -35,6 +35,7 @@
             // set the issue state color to the whole backlog item element
             // issue.style.backgroundColor = bgColor
             issue.style.background = "linear-gradient(to right, "+bgColor+" , white, white)";
+            issue.style.borderRadius = "10px";
 
             //for (var k = 0; k < endDivs.length; k++) {
                 // set background color of the element that shows issue nmber and assignee
