@@ -37,7 +37,7 @@
 
             for (var k = 0; k < endDivs.length; k++) {
                 // set background color of the element that shows issue nmber and assignee
-                endDivs[x].style.backgroundColor = bgColor
+                endDivs[k].style.backgroundColor = bgColor
             }
         }
     }
