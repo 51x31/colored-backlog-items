@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         colored backlog items
 // @namespace    *
-// @version      0.5
+// @version      0.6
 // @description  backlog items in jira backlog view will receive the colors of item states as background colors
 // @author       Simon Flachs
 // @homepage     https://www.simonflachs.de
@@ -33,12 +33,13 @@
             console.log(bgColor)
 
             // set the issue state color to the whole backlog item element
-            issue.style.backgroundColor = bgColor
+            // issue.style.backgroundColor = bgColor
+            issue.style.background = "linear-gradient(to right, "+bgColor+" , white, white)";
 
-            for (var k = 0; k < endDivs.length; k++) {
+            //for (var k = 0; k < endDivs.length; k++) {
                 // set background color of the element that shows issue nmber and assignee
-                endDivs[k].style.backgroundColor = bgColor
-            }
+                //endDivs[k].style.backgroundColor = bgColor
+            //}
         }
     }
 })();
